@@ -72,28 +72,29 @@
 
         <!-- paste inside .home__img (replace previous svg) -->
 <div class="home__img">
-  <svg class="home__blob animated-blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg">
+  <svg class="home__blob animated-blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Profile blob">
     <defs>
-      <!-- circular clip for your photo -->
       <clipPath id="avatarClip">
         <circle cx="240" cy="220" r="115" />
       </clipPath>
+      <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+        <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.12"/>
+      </filter>
     </defs>
 
-    <!-- blob background -->
-    <path fill="#3f6bf5"
-      d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+    <path fill="#3f6bf5" d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
 
-    <!-- your transparent PNG clipped to circle -->
     <image
       clip-path="url(#avatarClip)"
       x="120" y="100" width="240" height="240"
-      href="assets/img/perfil.png"
+      href="assets/img/perfil.jpg"
       preserveAspectRatio="xMidYMid slice"
+      filter="url(#softShadow)"
       alt="Profile"
     />
   </svg>
 </div>
+
 
 
       </section>
