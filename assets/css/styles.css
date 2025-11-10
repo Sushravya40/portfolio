@@ -530,28 +530,18 @@ img {
 }
 
 /* ===== BLOB ANIMATION =====*/
+/* ===== BLOB ANIMATION =====*/
 .animated-blob {
   animation: morph 8s ease-in-out infinite;
   transform-origin: 50% 50%;
-  will-change: transform;
 }
 
 @keyframes morph {
-  0% {
-    transform: scale(1) rotate(0deg);
-  }
-  25% {
-    transform: scale(1.02) rotate(2deg);
-  }
-  50% {
-    transform: scale(1.04) rotate(0deg);
-  }
-  75% {
-    transform: scale(1.02) rotate(-2deg);
-  }
-  100% {
-    transform: scale(1) rotate(0deg);
-  }
+  0% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.02) rotate(2deg); }
+  50% { transform: scale(1.04) rotate(0deg); }
+  75% { transform: scale(1.02) rotate(-2deg); }
+  100% { transform: scale(1) rotate(0deg); }
 }
 
 /* ===== IMAGE INSIDE BLOB =====*/
