@@ -69,10 +69,10 @@
       <!-- bigger circle so more of the face is visible -->
       <clipPath id="avatarClip">
         <!-- tweak cx, cy, r below to change the visible region -->
-        <circle circle cx="280" cy="200" r="160" />
+  <circle cx="250" cy="220" r="150" />
       </clipPath>
 
-      <filter id="softShadow" x="110" y="30" width="360" height="520">
+            <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
         <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.12"/>
       </filter>
     </defs>
@@ -82,14 +82,16 @@
 
     <!-- image: change x/y/width/height to move/zoom the photo inside the clip -->
     <image
-      clip-path="url(#avatarClip)"
-      x="80" y="10" width="360" height="360"
-      href="assets/img/perfil.png"
-      xlink:href="assets/img/perfil.png"
-      preserveAspectRatio="xMidYMid slice"
-      filter="url(#softShadow)"
-      alt="Profile"
-    />
+  clip-path="url(#avatarClip)"
+  x="60" y="-40"
+  width="420" height="420"
+  href="assets/img/perfil.png"
+  xlink:href="assets/img/perfil.png"
+  preserveAspectRatio="xMidYMid slice"
+  filter="url(#softShadow)"
+  alt="Profile"
+/>
+
   </svg>
 </div>
 
